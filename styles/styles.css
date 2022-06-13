@@ -39,3 +39,80 @@ body {
 .battleship-grey-color {
     color: #828282;
 }
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8px;
+}
+
+header > p {
+    border: 1px solid white;
+    padding: 6px;
+}
+
+main {
+    margin: 0 8px;
+}
+
+#readMore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#readMore > p {
+    margin-right: 7.5px;
+}
+
+#readMore > svg {
+    margin-left: 7.5px;
+}
+
+.interior-design {
+    width: 100%;
+    height: 279.34px; 
+}
+
+.designer-card {
+    background-color: #181719;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    width: 75%;
+    word-wrap: break-word;
+}
+
+.designer-card-info {
+    font-size: 20px;
+}
+
+.designer-card-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.designer-card-user > img {
+    width: 62.2px;
+    height: 52.68px;
+    clip-path: circle(45%);
+}
+
+.designer-card-user > div {
+    margin-left: 12px;
+}
+
+.designer-card-user > div > p:nth-child(1) {
+    margin: 20px 0 4px 0;
+}
+
+.designer-card-user > div > p:nth-child(2) {
+    margin: 0 0 17px 0;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
