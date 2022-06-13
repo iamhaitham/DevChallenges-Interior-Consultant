@@ -26,3 +26,16 @@
     font-family: 'Montserrat';
     font-weight: 700;
 }
+
+body {
+    color: white;
+    background-color: #181719;
+}
+
+.silver-chalice-color {
+    color: #A9A9A9;
+}
+
+.battleship-grey-color {
+    color: #828282;
+}
