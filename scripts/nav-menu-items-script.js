@@ -1,17 +1,9 @@
 const navMenu = document.getElementById('nav-menu');
 
-function chooseNavMenuItem(navMenuItem, navMenuItemIndex){
+function chooseNavMenuItem(navMenuItem){
     resetUnselectedNavMenuItems();
 
-    if(navMenuItemIndex === 1) {
-        navMenuItem.classList.toggle('nav-menu-item-selected');
-    } else if(navMenuItemIndex === 2) {
-        navMenuItem.classList.toggle('nav-menu-item-selected');
-    } else if(navMenuItemIndex === 3) {
-        navMenuItem.classList.toggle('nav-menu-item-selected');
-    } else if(navMenuItemIndex === 4) {
-        navMenuItem.classList.toggle('nav-menu-item-selected');
-    }
+    navMenuItem.classList.toggle('nav-menu-item-selected');
 }
 
 function resetUnselectedNavMenuItems() {
