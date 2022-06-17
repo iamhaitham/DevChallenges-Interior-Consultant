@@ -1,3 +1,3 @@
-function changeIcon(icon) {
+function onMenuTrigger(icon) {
     icon.classList.toggle('menuIconChanged');
 }
