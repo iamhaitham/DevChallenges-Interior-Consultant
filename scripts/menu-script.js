@@ -3,7 +3,7 @@ const originalLogoStyle = document.querySelectorAll('header > p')[0].style.visib
 const originalFooterStyle = document.getElementsByTagName('footer')[0];
 const menuTemplate = '<object type="text/html" data="../templates/menu-template.html" class="nav-menu"></object>';
 const navMenu = document.getElementsByClassName('nav-menu');
-const navMenuHeight = parent.innerHeight / 2;
+const navMenuHeight = parent.innerHeight / 1.7;
 const headerHeight = document.getElementsByTagName('header')[0].clientHeight;
 
 function hideOrShowLogo(hasMenuIconChanged) {
