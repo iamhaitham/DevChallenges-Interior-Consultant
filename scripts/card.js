@@ -31,7 +31,7 @@ function decideRatio() {
 
 
 function decideDesignerCardAbsoluteBottom() {  
-    // Note that I am not using the constants at the beginning, because when resizing the viewport, old values will be remembered and not the new ones.
+    // Note that I am not using the constants from the top, because when resizing the viewport, old values will be remembered and not the new ones.
     designerCard.style.bottom = 
         (window.innerHeight - document.getElementsByClassName('interior-design')[0].getBoundingClientRect().bottom) - (document.getElementsByClassName('designer-card')[0].clientHeight / decideRatio()) + 'px';
 }
