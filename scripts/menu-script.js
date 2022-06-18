@@ -6,6 +6,7 @@ const navMenu = document.getElementsByClassName('nav-menu');
 const navMenuHeight = parent.innerHeight / 1.7;
 const headerHeight = document.getElementsByTagName('header')[0].clientHeight;
 const menuItems = document.getElementById('menu-items');
+const originalMenuItemsDisplay = menuItems.style.display;
 
 function hideOrShowLogo(hasMenuIconChanged) {
     document.querySelectorAll('header > p')[0].style.visibility = 
@@ -20,6 +21,11 @@ function hideOrShowFooter(hasMenuIconChanged) {
 function hideOrShowNavMenu(hasMenuIconChanged) {
     document.getElementsByTagName('main')[0].innerHTML = 
         hasMenuIconChanged ? menuTemplate : originalMainContent;
+}
+
+function hideOrShowDesktopNavMenu(hasMenuIconChanged) {
+    document.getElementById('menu-items').style.display = 
+        hasMenuIconChanged ? 'none' : originalMenuItemsDisplay;
 }
 
 function addNavMenuStyle() {
@@ -42,6 +48,8 @@ function onMenuTrigger(icon) {
     hideOrShowLogo(hasMenuIconChanged);
     
     hideOrShowFooter(hasMenuIconChanged);
+
+    hideOrShowDesktopNavMenu(hasMenuIconChanged);
 }
 
 function chooseMenuItem(menuItems) {
