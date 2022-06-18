@@ -24,3 +24,23 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+
+#menu-items {
+    list-style-type: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#menu-items > li {
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+.menu-item-selected {
+    border-bottom: 4px solid white;
+    padding-bottom: 4px !important; 
+}
