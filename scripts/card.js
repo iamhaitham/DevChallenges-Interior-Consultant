@@ -3,6 +3,7 @@ const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
 const interiorDesignBottomOffset = document.getElementsByClassName('interior-design')[0].getBoundingClientRect().bottom;
 const designerCard = document.getElementsByClassName('designer-card')[0];
+const footer = document.getElementsByTagName('footer')[0];
 
 function decideRatio() {
     /* 
@@ -51,3 +52,5 @@ window.addEventListener('resize', () => {
     resetDesignerCardAbsoluteBottom();
     decideDesignerCardAbsoluteBottom();
 });
+
+footer.style.marginTop = designerCard.getBoundingClientRect().bottom - 400 + 'px';
