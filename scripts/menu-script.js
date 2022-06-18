@@ -12,8 +12,8 @@ function hideOrShowLogo(hasMenuIconChanged) {
 }
 
 function hideOrShowFooter(hasMenuIconChanged) {
-    document.getElementsByTagName('footer')[0].innerHTML = 
-        hasMenuIconChanged ? '' : originalFooterStyle;
+    originalFooterStyle.style.visibility = 
+        hasMenuIconChanged ? 'hidden' : 'visible';
 }
 
 function hideOrShowNavMenu(hasMenuIconChanged) {
