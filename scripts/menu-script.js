@@ -5,6 +5,7 @@ const menuTemplate = '<object type="text/html" data="../templates/menu-template.
 const navMenu = document.getElementsByClassName('nav-menu');
 const navMenuHeight = parent.innerHeight / 1.7;
 const headerHeight = document.getElementsByTagName('header')[0].clientHeight;
+const menuItems = document.getElementById('menu-items');
 
 function hideOrShowLogo(hasMenuIconChanged) {
     document.querySelectorAll('header > p')[0].style.visibility = 
@@ -41,4 +42,18 @@ function onMenuTrigger(icon) {
     hideOrShowLogo(hasMenuIconChanged);
     
     hideOrShowFooter(hasMenuIconChanged);
+}
+
+function chooseMenuItem(menuItems) {
+    resetUnselectedMenuItems();
+
+    menuItems.classList.toggle('menu-item-selected');
+}
+
+function resetUnselectedMenuItems() {
+    [...menuItems.children].forEach(menuItem => {
+        if(menuItem.classList.contains('menu-item-selected')){
+            menuItem.classList.remove('menu-item-selected');
+        }
+    });
 }
