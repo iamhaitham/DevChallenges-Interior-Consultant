@@ -122,3 +122,22 @@ footer {
 .nav-menu {
     width: 100%;
 }
+
+@media only screen and (min-width: 600px) {
+    main {
+      display: flex !important;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5%;
+    }
+
+    main > section:nth-child(1) {
+        width: 40%;
+    }
+
+    .designer-card {
+        width: 30%;
+        left: 60%;
+    }
+}

@@ -15,7 +15,7 @@ function decideRatio() {
 
     let factorOfSafety;
     
-    if(windowWidth >= samsungGalaxyS8PlusWidth) {
+    if(windowWidth >= samsungGalaxyS8PlusWidth && windowWidth < 800) {
         if(windowHeight == samsungGalaxyS8PlusHeight){
             factorOfSafety = 0;
         }else if(windowHeight > samsungGalaxyS8PlusHeight) {
@@ -23,7 +23,9 @@ function decideRatio() {
         }else {
             factorOfSafety = 0.1;
         }
-    }else {
+    } else if(windowWidth >= 800 ) {
+        factorOfSafety = 0.50;
+    } else {
         factorOfSafety = 0.25;
     }
 
