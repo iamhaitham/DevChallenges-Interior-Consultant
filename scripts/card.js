@@ -55,4 +55,8 @@ window.addEventListener('resize', () => {
     decideDesignerCardAbsoluteBottom();
 });
 
-footer.style.marginTop = designerCard.getBoundingClientRect().bottom - 400 + 'px';
+if(windowWidth >= 800){
+    footer.style.marginTop = designerCard.getBoundingClientRect().bottom - 200 + 'px';
+} else {
+    footer.style.marginTop = designerCard.getBoundingClientRect().bottom - 400 + 'px';
+}
